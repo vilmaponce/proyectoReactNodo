@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+
+.body-bg {
+    background-image: url('/assets/Fondo.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+  
