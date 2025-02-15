@@ -43,14 +43,15 @@ const NavBar = () => {
     {
       id: 2,
       title: "GitHub",
-      link: "https://www.github.com",
+      link: "https://github.com/vilmaponce",
       icon: "bi bi-github",
     },
   ];
 
 
   return (
-    <nav className='w-full bg-[#b6669e] bg-opacity-30 backdrop-blur-md z-50 transition-all duration-300'>
+    <nav className="w-full h-[85px] bg-[#b6669e] bg-opacity-30 backdrop-blur-md z-[999] transition-all duration-300">
+
 
       {/* VIEW DESKTOP  */}
       <div className='flex justify-between items-center sm:px-12 sm:py-6 px-4 py-3'>
@@ -60,7 +61,7 @@ const NavBar = () => {
             alt='Logo'
             className='w-[60px]'
           />
-          <p className='text-white font-bold font-size-3xl'>VILMA</p>
+          <p className='text-white font-bold font-size-3xl'>Mi Proyecto</p>
         </div>
 
         {/* BURGER BTN  */}
@@ -106,7 +107,7 @@ const NavBar = () => {
                 // el arrreglo va a interar con la funcion map que recibe un parametro (link , el arrays de links)
               <li key={link.id}> 
               {/* cada hijo (li)necesita una ID */}
-                <a href='/' className='text-sm text-white hover:text-yellow-500 transition-transform duration-300 transform hover:scale-110 inline-block'>
+                <a href='/' className='text-sm text-white hover:text-[#f802ae] transition-transform duration-300 transform hover:scale-110 inline-block'>
                   {/* para que no se repita el mismo tirulo */}
                   {link.title}
                 </a>

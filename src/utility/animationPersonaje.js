@@ -1,10 +1,16 @@
 export const animatePersonaje = {
-    initial: { y: -100, scale: 1.1, opacity: 0 }, 
+    initial: { scale: 1 }, // Comienza con tamaño normal
     animate: { 
-        y: [-100, -20, 0], // Baja con un pequeño freno
-        scale: [1.1, 1.4, 1.3], // Se agranda más al acercarse antes de estabilizarse
-        opacity: [0, 0.5, 1], // Aparición progresiva
-        transition: { duration: 1.5, ease: "easeOut" } 
-    }, 
-    whileHover: { scale: 1.5 } // Hace un zoom aún mayor al pasar el mouse
-};
+      y: [100, 0], 
+      scale: [1, 1.1], // El personaje empieza normal y crece ligeramente
+      opacity: [0, 1], // Se hace visible
+    },
+    transition: { 
+      duration: 1.5, 
+      ease: "easeOut",
+    },
+    whileHover: { 
+      scale: 1.3, // Al pasar el mouse, el personaje se agranda
+    },
+  };
+  
