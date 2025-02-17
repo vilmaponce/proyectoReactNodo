@@ -6,6 +6,9 @@ import logocookies from "../assets/cookies.png";
 import personaje from "../assets/fairyCute.png";
 import fondo from "../assets/mundo.png";
 
+
+
+
 const Body = () => {
   return (
     <div className="min-h-screen w-full bg-cover bg-center bg-no-repeat bg-fixed" style={{ backgroundImage: `url(${fondo})` }}>
@@ -42,15 +45,10 @@ const Body = () => {
           </div>
 
           {/* Sección derecha */}
-          <motion.div
-            initial={{ scale: 1 }} // Inicialmente en su tamaño normal
-            animate={{ y: [100, 0], scale: [1, 1.1], opacity: [0, 1] }} // Animación que baja y aumenta el tamaño
-            transition={{ duration: 1.5, ease: "easeOut" }} // Definimos la duración y el tipo de transición
-            whileHover={{ scale: 1.3 }} // Al pasar el mouse sobre el personaje, lo agrandamos
-            className="flex justify-center w-full overflow-hidden"
-          >
+          <motion.div {...animatePersonaje} className="flex justify-center w-full overflow-hidden">
             <img src={personaje} className="max-w-[500px] w-full md:w-auto h-auto" alt="Personaje" />
           </motion.div>
+
 
         </div>
       </div>
